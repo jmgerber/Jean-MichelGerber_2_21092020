@@ -3,43 +3,47 @@
 <head>
   <meta charset="utf-8">
   <title>Reservia</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="public/style.css">
   <link href="font_icon/all.css" rel="stylesheet">
 </head>
-<body>
-    <div id="main">
-        <header>
-            <div class="logo">
-                <img src="images/logo/Reservia.svg" alt="Reservia">
-            </div>
-            <!-- Menu de navigation-->
-            <nav>      
-                <ul>
-                    <a href="#"><li>Hébergement</li></a>
-                    <a href="#"><li>Activités</li></a>
-                    <a href="#"><li>S'inscrire</li></a>
-                </ul>
-            </nav>
-        </header>
+<body>  
+    <header>
+        <div class="logo">
+            <img src="images/logo/Reservia.svg" alt="Reservia">
+        </div>
+        <!-- Menu de navigation-->
+        <nav>      
+            <ul>
+                <a href="#ancre_hebergement"><li>Hébergement</li></a>
+                <a href="#ancre_activites"><li>Activités</li></a>
+                <a href="#"><li>S'inscrire</li></a>
+            </ul>
+        </nav>
+    </header>
 
+    <div id="main">
         <div class="search">
             <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
             <p>En plein centre ville ou en pleine nature</p>
             <!-- Formulaire de recherche -->
-            <i class="fas fa-map-marker-alt"></i><input type="text"><button>Rechercher</button>
-            <div class="filtres">
-                <div>Filtres</div>
-                <div><i class="fas fa-money-bill-wave"></i>Economique</div>
-                <div><i class="fas fa-child"></i>Familial</div>
-                <div><i class="fas fa-heart"></i>Romantique</div>
-                <div><i class="fas fa-dog"></i>Animaux autorisés</div>
+            <div class="search_field">
+                <div class="container_marker"><i class="fas fa-map-marker-alt icone_map"></i></div>
+                <input type="text" id="search_input" required>
+                <button class="search_button">Rechercher</button>
             </div>
-            <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="filters">
+                <div class="main_filter">Filtres</div>
+                <div class="filter"><div class="icon_filter"><i class="fas fa-money-bill-wave"></i></div><span>Economique</span></div>
+                <div class="filter"><div class="icon_filter"><i class="fas fa-child"></i></div><span>Familial</span></div>
+                <div class="filter"><div class="icon_filter"><i class="fas fa-heart"></i></div><span>Romantique</span></div>
+                <div class="filter"><div class="icon_filter"><i class="fas fa-dog"></i></div><span>Animaux autorisés</span></div>
+            </div>
+            <div class="container_info"><div class="icon_info"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
 
         <div class="contenu_hebergement">
             <section class="hebergement">
-                <h2>Hébergements à Marseille</h2>
+                <h2 id="ancre_hebergement">Hébergements à Marseille</h2>
                 <div>
                     <div class="choix_hebergement">
                         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
@@ -114,7 +118,7 @@
                 </div>
             </section>
             <section class="activites">
-                <h2>Activité à Marseille</h2>
+                <h2 id="ancre_activites">Activité à Marseille</h2>
                 <div>
                     <div class="choix_activites">
                         <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
@@ -155,6 +159,8 @@
                 </div>
             </section>
         </div>
+    </div>
+
         <footer>
             <div class="a_propos">
                 <h3>A propos</h3>
