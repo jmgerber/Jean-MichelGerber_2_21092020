@@ -1,12 +1,12 @@
 /* Font perso */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 
 /* General */
 
 body{
     margin: 0 50px 50px 50px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     font-family: 'Raleway', sans-serif;
 }
 
@@ -17,7 +17,12 @@ ul {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-weight: 700;
 }
 
 /* Header */
@@ -25,6 +30,7 @@ a {
 header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 header .logo{
@@ -34,8 +40,136 @@ header .logo{
 nav li{
     display: inline-block;
     padding-top: 40px;
+    margin-left: 50px;
+}
+
+nav a:last-child{
+    color: #0065FC;
+    font-weight: bold;
 }
 
 nav li:hover{
+    color: #0065FC;
     border-top: 2px solid #0065FC;
+}
+
+/* Search */
+
+.search h2{
+    margin-bottom: 10px;
+}
+
+.search p{
+    margin-top: 10px;
+}
+
+.search_field{
+    margin-bottom: 20px;
+}
+
+.container_marker
+{
+    position: absolute;
+    height: 50px;
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+}
+
+.container_marker i{
+    position: relative;
+    top: 0.85rem;
+    left: 1.15rem;
+}
+
+.icone_map{
+    font-size: 1.2rem; 
+}
+
+#search_input{
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    height: 48px;
+    margin-left: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 230px;
+}
+
+.search_button{
+    height: 50px;
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    position: relative;
+    left: -5px;
+    border-radius: 0 15px 15px 0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* Filtres */
+
+.main_filter{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.filters{
+    display: flex;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    margin-left: 30px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+.filter span{
+    padding-left: 12px;
+}
+
+.icon_filter{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+.icon_filter i{
+    margin: auto;
+    color: #0065FC;
+}
+
+.icon_info{
+    margin: 0;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.icon_info i{
+    margin: auto;
+    font-size: 0.9rem;
+    color: #0065FC;  
+}
+
+.container_info{
+    display: flex;
 }
