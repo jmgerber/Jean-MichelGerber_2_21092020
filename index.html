@@ -1,27 +1,28 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Reservia</title>
-  <link rel="stylesheet" href="public/style.css">
-  <link href="font_icon/all.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Reservia</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link href="font_icon/all.css" rel="stylesheet">
 </head>
-<body>  
-    <header>
-        <div class="logo">
-            <img src="images/logo/Reservia.svg" alt="Reservia">
-        </div>
-        <!-- Menu de navigation-->
-        <nav>      
-            <ul>
-                <a href="#ancre_hebergement"><li>Hébergement</li></a>
-                <a href="#ancre_activites"><li>Activités</li></a>
-                <a href="#"><li>S'inscrire</li></a>
-            </ul>
-        </nav>
-    </header>
 
+<body> 
     <div id="main">
+        <header class="flex">
+            <div class="logo">
+                <img src="images/logo/Reservia.svg" alt="Reservia">
+            </div>
+            <!-- Menu de navigation-->
+            <nav>      
+                <ul>
+                    <a href="#ancre_hebergement"><li>Hébergement</li></a>
+                    <a href="#ancre_activites"><li>Activités</li></a>
+                    <a href="#"><li>S'inscrire</li></a>
+                </ul>
+            </nav>
+        </header>
+
         <div class="search">
             <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
             <p>En plein centre ville ou en pleine nature</p>
@@ -31,17 +32,17 @@
                 <input type="text" id="search_input" required>
                 <button class="search_button">Rechercher</button>
             </div>
-            <div class="filters">
-                <div class="main_filter">Filtres</div>
+            <div class="filters flex">
+                <div class="main_filter flex">Filtres</div>
                 <div class="filter"><div class="icon_filter"><i class="fas fa-money-bill-wave"></i></div><span>Economique</span></div>
                 <div class="filter"><div class="icon_filter"><i class="fas fa-child"></i></div><span>Familial</span></div>
                 <div class="filter"><div class="icon_filter"><i class="fas fa-heart"></i></div><span>Romantique</span></div>
                 <div class="filter"><div class="icon_filter"><i class="fas fa-dog"></i></div><span>Animaux autorisés</span></div>
             </div>
-            <div class="container_info"><div class="icon_info"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville</div>
+            <div class="container_info flex"><div class="icon_info flex"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
 
-        <div class="contenu_hebergement">
+        <div class="contenu_hebergement flex">
             <section class="hebergement">
                 <h2 id="ancre_hebergement">Hébergements à Marseille</h2>
                 <div class="tab_hebergement flex">
@@ -138,7 +139,7 @@
                 <div>
 
                     <a href="#">
-                        <div class="choix_populaire">
+                        <div class="choix_populaire flex">
                             <div class="image_populaire populaire1"></div>
                             <div class="populaire_description">
                                 <div class="textPopular flex">
@@ -153,7 +154,7 @@
                     </a>
 
                     <a href="#">
-                        <div class="choix_populaire">
+                        <div class="choix_populaire flex">
                             <div class="image_populaire populaire2"></div>
                             <div class="populaire_description">
                                 <div class="textPopular flex">
@@ -168,7 +169,7 @@
                     </a>
 
                     <a href="#">
-                        <div class="choix_populaire">
+                        <div class="choix_populaire flex">
                             <div class="image_populaire populaire3"></div>
                             <div class="populaire_description">
                                 <div class="textPopular flex">
@@ -187,9 +188,8 @@
         </div>
         
         <section class="activites">
-            <h2 id="ancre_activites">Activité à Marseille</h2>
+            <h2 id="ancre_activites">Activités à Marseille</h2>
             <div class="activitiesTab flex">
-
 
                 <a href="#">
                     <div class="choix_activites">
@@ -202,31 +202,29 @@
                     </div>
                 </a>
 
-                <div class="activitiesColumn">
-                <a href="#" class="choix2">
-                    <div class="choix_activites choix2">
-                        <div class="activityPicture activity2"></div>  
-                        <div class="activityDescription">
-                            <div class="activityName">
-                                Fort de Pomègues
+                <div class="activitiesColumn flex">
+                    <a href="#" class="choix2">
+                        <div class="choix_activites choix2">
+                            <div class="activityPicture activity2"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Fort de Pomègues
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-
-                <a href="#" class="choix3">
-                    <div class="choix_activites choix3">
-                        <div class="activityPicture activity3"></div>  
-                        <div class="activityDescription">
-                            <div class="activityName">
-                                Îles du Frioul
+                    <a href="#" class="choix3">
+                        <div class="choix_activites choix3">
+                            <div class="activityPicture activity3"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Îles du Frioul
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 </div>
-
 
                 <a href="#">
                     <div class="choix_activites">
@@ -239,60 +237,56 @@
                     </div>
                 </a>
 
-                <div class="activitiesColumn">
-                <a href="#" class="choix5">
-                    <div class="choix_activites choix5">
-                        <div class="activityPicture activity5"></div>  
-                        <div class="activityDescription">
-                            <div class="activityName">
-                                Notre-Dame-de-la-Garde
+                <div class="activitiesColumn flex">
+                    <a href="#" class="choix5">
+                        <div class="choix_activites choix5">
+                            <div class="activityPicture activity5"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Notre-Dame-de-la-Garde
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-
-                <a href="#" class="choix6">
-                    <div class="choix_activites choix6">
-                        <div class="activityPicture activity6"></div>  
-                        <div class="activityDescription">
-                            <div class="activityName">
-                                Parc Longchamp
+                    <a href="#" class="choix6">
+                        <div class="choix_activites choix6">
+                            <div class="activityPicture activity6"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Parc Longchamp
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
                 </div>
-
-
             </div>
         </section>
     </div>
 
-        <footer>
-            <div class="a_propos">
-                <h3>A propos</h3>
-                <ul>
-                    <a href=""><li>Fonctionnement du site</li></a>
-                    <a href=""><li>Conditions générales de vente</li></a>
-                    <a href=""><li>Données et confidentialités</li></a>
-                </ul>
-            </div>
-            <div class="nos_hebergements">
-                <h3>Nos hébergements</h3>
-                <ul>
-                    <a href=""><li>Charte qualité</li></a>
-                    <a href=""><li>Soumettre votre hôtel</li></a>
-                </ul>
-            </div>
-            <div class="assistance">
-                <h3>Assistance</h3>
-                <ul>
-                    <a href=""><li>Centre d'aide</li></a>
-                    <a href=""><li>Nous contacter</li></a>
-                </ul>
-            </div>
-        </footer>
-    </div>
+    <footer class="flex">
+        <div class="about">
+            <h3>A propos</h3>
+            <ul>
+                <a href=""><li>Fonctionnement du site</li></a>
+                <a href=""><li>Conditions générales de vente</li></a>
+                <a href=""><li>Données et confidentialités</li></a>
+            </ul>
+        </div>
+        <div class="ourHotel">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <a href=""><li>Charte qualité</li></a>
+                <a href=""><li>Soumettre votre hôtel</li></a>
+            </ul>
+        </div>
+        <div class="assistance">
+            <h3>Assistance</h3>
+            <ul>
+                <a href=""><li>Centre d'aide</li></a>
+                <a href=""><li>Nous contacter</li></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

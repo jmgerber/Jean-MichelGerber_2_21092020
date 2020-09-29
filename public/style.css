@@ -5,9 +5,13 @@
 /* General */
 
 body{
-    margin: 0 50px 50px 50px;
+    margin: 0;
     box-sizing: border-box; 
     font-family: 'Raleway', sans-serif;
+}
+
+#main{
+    margin: 0 50px 50px 50px;
 }
 
 ul {
@@ -32,7 +36,6 @@ h2{
 /* Header */
 
 header{
-    display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
 }
@@ -121,13 +124,11 @@ nav li:hover{
 /* Filtres */
 
 .main_filter{
-    display: flex;
     align-items: center;
     margin-right: 10px;
 }
 
 .filters{
-    display: flex;
     flex-wrap: wrap;
     font-weight: 700;
     font-size: 1.1rem;
@@ -164,7 +165,6 @@ nav li:hover{
 
 .icon_info{
     margin: 0;
-    display: flex;
     height: 20px;
     width: 20px;
     border: 1px solid #f2f2f2;
@@ -287,7 +287,6 @@ nav li:hover{
 
 .choix_populaire{
     height: 145px;
-    display: flex;
     border: 5px solid #ffffff;
     border-radius: 15px;
     margin-bottom: 30px;
@@ -413,7 +412,6 @@ nav li:hover{
 
 .activitiesColumn{
     width: 23%;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -442,4 +440,19 @@ nav li:hover{
 
 .activity1 + .activityDescription, .activity4 + .activityDescription{
     height: 40px;
+}
+
+/* Footer */
+
+footer{
+    padding: 40px 50px 50px 50px;
+    background-color: #f2f2f2;
+}
+
+footer div{
+    flex: 1;
+}
+
+footer li{
+    margin-bottom: 15px;
 }
