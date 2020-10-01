@@ -42,6 +42,11 @@ header{
 
 header .logo{
     margin-top: 30px;
+    flex: 1;
+}
+
+nav{
+    display: flex;
 }
 
 nav li{
@@ -55,9 +60,10 @@ nav a{
 .signUp{
     color: #0065FC;
     font-weight: bold;
+    padding: 40px 40px 0 40px;
 }
 
-nav a:hover{
+nav li a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 38px;
@@ -79,12 +85,11 @@ nav a:hover{
 
 .searchBar{
     margin-bottom: 30px;
+    height: 50px;
 }
 
 .containerMarker
 {
-    position: absolute;
-    height: 50px;
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
@@ -97,24 +102,23 @@ nav a:hover{
     font-size: 1.2rem; 
 }
 
-#searchInput{
+.searchInput{
     border: 1px solid #f2f2f2;
     padding: 0 0 0 15px;
-    height: 48px;
-    margin-left: 50px;
     font-size: 1.1rem;
     font-weight: 600;
     width: 230px;
 }
 
+.searchInput::placeholder{
+    color: #c2c2c2;
+}
+
 .searchButton{
-    height: 50px;
     width: 130px;
     background-color: #0065FC;
     border: none;
     padding: 0;
-    position: relative;
-    left: -5px;
     border-radius: 0 15px 15px 0;
     color: #ffffff;
     font-weight: 600;
@@ -122,11 +126,14 @@ nav a:hover{
     cursor: pointer;
 }
 
+.searchButton i{
+    display: none;
+}
+
 /* Filters */
 
-.mainFilter{
-    align-items: center;
-    margin-right: 10px;
+.textFilter{
+    align-self: center;
 }
 
 .filters{
@@ -142,7 +149,7 @@ nav a:hover{
     height: 46px;
     border: 2px solid #f2f2f2;
     border-left: none;
-    margin-left: 30px;
+    margin-left: 20px;
     padding-right: 20px;
     border-radius: 25px;
 }
@@ -155,6 +162,10 @@ nav a:hover{
     cursor: pointer;
     border-color: #0065FC;
     color: #0065FC;
+}
+
+.filterList{
+    flex-wrap: wrap;
 }
 
 .iconFilter{
@@ -340,6 +351,7 @@ nav a:hover{
 
 .popularDescription .hotelName + p{
     margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .fa-star{
@@ -468,4 +480,286 @@ footer li{
 footer a:hover{
     font-weight: 600;
     color: #0065FC;
+}
+
+@media only screen and (max-width: 1280px){
+
+    .hotelsTab a{
+        width: 48%;
+    }
+
+    .hotels{
+        flex: 1.5;
+    }
+
+    .hotelDescriptionText{
+        line-height: 1.4rem;
+    }
+
+    .hotelDescriptionText p{
+        margin: 0;
+    }
+}
+
+/* Tablet version */
+@media only screen and (max-width: 1024px){
+
+    /* Search - Tablet */
+    .filters{
+        flex-direction: column;
+    }
+
+    .textFilter{
+        align-self: auto;
+        margin-bottom: 15px;
+    }
+
+    .filter{
+        margin: 0 1rem 1rem 0;
+    }
+
+    /* Popular - Tablet */
+
+    .popular{
+        margin: 0 0 20px 0;
+    }
+
+    .popularFrame{
+        height: 180px;
+    }
+
+    .popularDescriptionText, .popularDescriptionText .hotelName{
+        font-size: 1.5rem;
+    }
+
+    .popularDescriptionText .fa-star{
+        font-size: 1rem;
+    }
+
+    /* Hotels - Tablet */
+    
+    .hotels{
+        order: 2;
+    }
+
+    .containerHotels{
+        flex-direction: column;
+    }
+
+    /* Activities - Tablet */
+
+    .activitiesTab{
+        height: auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .activitiesTab a{
+        width: 48%;
+        order: -1;
+    }
+
+    .activityFrame{
+        height: 180px;
+    }
+
+    .choice2, .choice3, .choice5, .choice6{
+        margin-bottom: 0;
+        flex: 0.48;
+    }
+
+    .activitiesColumn{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 30px;
+    }
+
+    .activityName{
+        font-size: 1rem;
+    }
+
+    /* Footer - Tablet */
+
+    footer div{
+        padding: 10px;
+    }
+}
+
+/* Mobile version */
+@media only screen and (max-width: 600px){
+
+    /* General */
+
+    #main{
+        margin: 0;
+    }
+
+    /* Header - Mobile */
+
+    header{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .signUp{
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 30px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav{
+        order:3;
+    }
+    
+    nav ul{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav li{
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+
+    nav li a:hover{
+        border-top: none;
+    }
+
+    nav li:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    /* Search - Mobile */
+
+    .search{
+        margin: 30px;
+    }
+
+    .searchInput{
+        flex: 1;
+    }
+
+    .searchButton{
+        position: relative;
+        width: 50px;
+        border-radius: 15px;
+        left: -20px;
+        flex-shrink: 0;
+    }
+
+    .containerMarker{
+        flex-shrink: 0;
+    }
+
+    .searchButton span{
+        display: none;
+    }
+
+    .searchButton i{
+        display: inline-block;
+    }
+
+    /* Popular - Mobile */
+
+    .popular{
+        border-radius: 0;
+    }
+
+    .popularFrame{
+        height: 145px;
+    }
+
+    .popularDescriptionText .hotelName, .hotelName{
+        font-size: 1.2rem;
+    }
+
+    .popularDescriptionText p{
+        font-size: 1rem;
+    }
+
+    .popularDescriptionText .fa-star, .fa-star{
+        font-size: 0.9rem;
+    }
+
+    .popularDescriptionText > div{
+        line-height: 1.4rem;
+    }
+
+    /* Hotels - Mobile */
+
+    .hotels{
+        padding: 0 40px;
+        background-color: initial;
+    }
+
+    .containerHotels{
+        margin-bottom: 40px;
+    }
+
+    .hotelsTab a{
+        width: 100%;
+    }
+
+    .hotelDescription{
+        height: 33%;
+    }
+
+    .hotelDescriptionText{
+        line-height: 1.8rem;
+    }
+
+    /* Activities - Mobile */
+
+    .activitiesTab{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .activitiesColumn{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .activitiesTab a, .activitiesColumn{
+        width: 100%;
+    }
+
+    .activitiesTab a{
+        margin-bottom: 30px;
+    }
+
+    .choice2, .choice3, .choice5, .choice6{
+        margin-bottom: 0;
+    }
+
+    .activityFrame{
+        height: 200px;
+    }
+
+    .activityName{
+        font-size: 1.1rem;
+    }
+
+    .activities{
+        padding: 0 40px;
+    }
+
+    /* Footer - Mobile */
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer div{
+        padding: 0px;
+    }
 }

@@ -17,29 +17,31 @@
             <!-- Navigation -->
             <nav>      
                 <ul class="flex">
-                    <li><a href="#ancre_hebergement">Hébergement</a></li>
-                    <li><a href="#ancre_activites">Activités</a></li>
-                    <li><a href="" class="signUp">S'inscrire</a></li>
+                    <li><a href="#hotelsAnchor">Hébergements</a></li>
+                    <li><a href="#activitiesAnchor">Activités</a></li>
                 </ul>
             </nav>
+            <a href="" class="signUp">S'inscrire</a>
         </header>
 
         <div class="search">
-            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre ville ou en pleine nature</p>
             <!-- Search bar -->
-            <div class="searchBar">
+            <div class="searchBar flex">
                 <div class="containerMarker"><i class="fas fa-map-marker-alt"></i></div>
-                <input type="text" id="searchInput" placeholder="Marseille, France" required>
-                <button class="searchButton">Rechercher</button>
+                <input type="text" class="searchInput" placeholder="Marseille, France" required>
+                <button class="searchButton"><span>Rechercher</span><i class="fas fa-search"></i></button>
             </div>
             <!-- Filters -->
             <div class="filters flex">
-                <div class="mainFilter flex">Filtres</div>
-                <div class="filter"><div class="iconFilter"><i class="fas fa-money-bill-wave"></i></div><span>Economique</span></div>
-                <div class="filter"><div class="iconFilter"><i class="fas fa-child"></i></div><span>Familial</span></div>
-                <div class="filter"><div class="iconFilter"><i class="fas fa-heart"></i></div><span>Romantique</span></div>
-                <div class="filter"><div class="iconFilter"><i class="fas fa-dog"></i></div><span>Animaux autorisés</span></div>
+                <div class="textFilter">Filtres</div>
+                <div class="filterList flex">
+                    <div class="filter"><div class="iconFilter"><i class="fas fa-money-bill-wave"></i></div><span>Économique</span></div>
+                    <div class="filter"><div class="iconFilter"><i class="fas fa-child"></i></div><span>Familial</span></div>
+                    <div class="filter"><div class="iconFilter"><i class="fas fa-heart"></i></div><span>Romantique</span></div>
+                    <div class="filter"><div class="iconFilter"><i class="fas fa-dog"></i></div><span>Animaux autorisés</span></div>
+                </div>
             </div>
             <div class="containerInfo flex"><div class="iconInfo flex"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville</div>
         </div>
@@ -47,7 +49,7 @@
         <div class="containerHotels flex">
             <!-- Hotels -->
             <section class="hotels">
-                <h2 id="ancre_hebergement">Hébergements à Marseille</h2>
+                <h2 id="hotelsAnchor">Hébergements à Marseille</h2>
                 <div class="hotelsTab flex">
 
                     <a href="">
@@ -189,13 +191,13 @@
             </section>
         </div>
         <!-- Activities -->
-        <section class="activites">
-            <h2 id="ancre_activites">Activités à Marseille</h2>
+        <section class="activities">
+            <h2 id="activitiesAnchor">Activités à Marseille</h2>
             <div class="activitiesTab flex">
 
                 <a href="">
                     <div class="activityFrame">
-                        <div class="activityPicture activity1"></div>  
+                        <div class="activityPicture activity1"></div>
                         <div class="activityDescription">
                             <div class="activityName">
                                 Vieux Port
