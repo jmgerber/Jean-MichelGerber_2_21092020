@@ -696,17 +696,25 @@ footer a:hover{
 
     /* Hotels - Mobile */
 
-    .hotels > h2{
-        font-size: 1.3rem;
-    }
-
     .hotels{
         padding: 0 40px;
         background-color: initial;
     }
 
+    .containerHotels{
+        margin-bottom: 40px;
+    }
+
     .hotelsTab a{
         width: 100%;
+    }
+
+    .hotelDescription{
+        height: 33%;
+    }
+
+    .hotelDescriptionText{
+        line-height: 1.8rem;
     }
 
     /* Activities - Mobile */
