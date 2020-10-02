@@ -248,8 +248,15 @@ nav li a:hover{
     padding: 10px;
 }
 
+.hotelDescriptionText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .hotelDescriptionText p{
-    margin: 6px 0;
+    margin: 0;
 }
 
 .hotel1{
