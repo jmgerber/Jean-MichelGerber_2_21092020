@@ -248,8 +248,15 @@ nav li a:hover{
     padding: 10px;
 }
 
+.hotelDescriptionText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .hotelDescriptionText p{
-    margin: 6px 0;
+    margin: 0;
 }
 
 .hotel1{
@@ -370,34 +377,45 @@ nav li a:hover{
 /* Activities */
 
 .activitiesTab{
-    height: 450px;
-    justify-content: space-between;
+    display: grid;
+    grid-template: repeat(13, 1fr) / repeat(4, 1fr);
+    height: auto;
+    gap: 40px;
+    grid-auto-flow: column;
 }
 
-.activitiesTab a{
-    width: 23%;
+.row12{
+    grid-row-end: span 13;
 }
 
-.activityFrame{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 7px #c1c1c1;
-    border-radius: 15px;
-    height: 100%;
+.row6{
+    grid-row-end: span 7;
+}
+
+.row5{
+    grid-row-end: span 6;
 }
 
 .activityPicture{
     height: 100%;
-    border-radius: 15px 15px 0 0;
+    background-color: lawngreen;
+}
+
+.activityFrame{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
 }
 
 .activityDescription{
-    height: 50px;
-    background-color: #ffffff;
+    background-color: white;
+    padding: 10px 5px 0px 15px;
     font-size: 1.1rem;
     font-weight: 700;
-    border-radius: 0 0 15px 15px;
-    padding: 15px 15px 0 15px;
 }
 
 .activity1{
@@ -428,38 +446,6 @@ nav li a:hover{
 .activity6{
     background: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg") center;
     background-size: cover;
-}
-
-.activitiesColumn{
-    width: 23%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.choice2{
-    flex:0.55;
-    margin-bottom: 5%;
-}
-
-.choice3{
-    flex:0.4;
-}
-
-.choice5{
-    flex: 0.45;
-    margin-bottom: 5%;
-}
-
-.choice6{
-    flex: 0.5;
-}
-
-.activitiesColumn a{
-    width: 100%;
-}
-
-.activity1 + .activityDescription, .activity4 + .activityDescription{
-    height: 40px;
 }
 
 /* Footer */
@@ -548,34 +534,14 @@ footer a:hover{
 
     /* Activities - Tablet */
 
-    .activitiesTab{
-        height: auto;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .activitiesTab a{
-        width: 48%;
-        order: -1;
-    }
-
-    .activityFrame{
+    .activityFrame
+    {
         height: 180px;
     }
 
-    .choice2, .choice3, .choice5, .choice6{
-        margin-bottom: 0;
-        flex: 0.48;
-    }
-
-    .activitiesColumn{
-        width: 100%;
-        flex-direction: row;
-        margin-top: 30px;
-    }
-
-    .activityName{
-        font-size: 1rem;
+    .row12, .row5, .row6{
+        grid-row-end: span 4;
+        grid-column-end: span 2;
     }
 
     /* Footer - Tablet */
@@ -696,53 +662,41 @@ footer a:hover{
 
     /* Hotels - Mobile */
 
-    .hotels > h2{
-        font-size: 1.3rem;
-    }
-
     .hotels{
         padding: 0 40px;
         background-color: initial;
+    }
+
+    .containerHotels{
+        margin-bottom: 40px;
     }
 
     .hotelsTab a{
         width: 100%;
     }
 
+    .hotelDescription{
+        height: 33%;
+    }
+
+    .hotelDescriptionText{
+        line-height: 1.8rem;
+    }
+
     /* Activities - Mobile */
 
-    .activitiesTab{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .activitiesColumn{
-        flex-direction: column;
-        margin-top: 0;
-    }
-
-    .activitiesTab a, .activitiesColumn{
-        width: 100%;
-    }
-
-    .activitiesTab a{
-        margin-bottom: 30px;
-    }
-
-    .choice2, .choice3, .choice5, .choice6{
-        margin-bottom: 0;
-    }
-
-    .activityFrame{
-        height: 200px;
-    }
-
-    .activityName{
-        font-size: 1.1rem;
-    }
-
     .activities{
-        padding: 0 40px;
+        margin: 40px;
+    }
+
+    .activitiesTab{
+        grid-template: repeat(6, 1fr) / 1fr;;
+        grid-auto-flow: initial;
+    }
+
+    .row12, .row5, .row6{
+        grid-row-end: span 1;
+        grid-column-end: span 1;
     }
 
     /* Footer - Mobile */
