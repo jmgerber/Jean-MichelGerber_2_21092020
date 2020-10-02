@@ -202,12 +202,6 @@ nav li a:hover{
 
 /* Hotels */
 
-.containerHotels{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-}
-
 .hotels, .popular{
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -218,44 +212,38 @@ nav li a:hover{
     flex: 2;
 }
 
-.hotelsTab{
-    flex-wrap: wrap;
-    justify-content: space-between;
+.hotels > h2{
+    margin: 0;
 }
 
-.hotelsTab a{
-    width: 32%;
+.hotelsTab{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0 50px;
 }
 
 .hotelFrame{
-    flex-direction: column;
+    display: grid;
     height: 220px;
+    grid-template-rows: 1fr 40%;
+    box-sizing: border-box;
     border: 5px solid #ffffff;
-    border-radius: 20px;
-    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
 }
 
-.hotelPicture{
-    height: 64%;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
-}
-
 .hotelDescription{
-    height: 36%;
-    background-color: #ffffff;
-    padding: 10px;
-}
-
-.hotelDescriptionText{
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
-.hotelDescriptionText p{
+.hotelDescription p{
     margin: 0;
 }
 
@@ -412,8 +400,9 @@ nav li a:hover{
 }
 
 .activityDescription{
+    align-self: center;
     background-color: white;
-    padding: 10px 5px 0px 15px;
+    padding-left: 10px;
     font-size: 1.1rem;
     font-weight: 700;
 }
@@ -470,20 +459,16 @@ footer a:hover{
 
 @media only screen and (max-width: 1280px){
 
-    .hotelsTab a{
-        width: 48%;
-    }
-
     .hotels{
         flex: 1.5;
     }
-
-    .hotelDescriptionText{
-        line-height: 1.4rem;
+    
+    .hotelsTab{
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     }
 
-    .hotelDescriptionText p{
-        margin: 0;
+    .activityDescription{
+        font-size: 1rem;
     }
 }
 
@@ -542,6 +527,10 @@ footer a:hover{
     .row12, .row5, .row6{
         grid-row-end: span 4;
         grid-column-end: span 2;
+    }
+
+    .activityDescription{
+        font-size: 1.1rem;
     }
 
     /* Footer - Tablet */
@@ -667,20 +656,8 @@ footer a:hover{
         background-color: initial;
     }
 
-    .containerHotels{
-        margin-bottom: 40px;
-    }
-
-    .hotelsTab a{
-        width: 100%;
-    }
-
-    .hotelDescription{
-        height: 33%;
-    }
-
-    .hotelDescriptionText{
-        line-height: 1.8rem;
+    .hotelsTab{
+        grid-template: repeat(6, 1fr) / 1fr;
     }
 
     /* Activities - Mobile */
