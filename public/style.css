@@ -11,7 +11,7 @@ body{
 }
 
 #main{
-    margin: 0 50px 50px 50px;
+    margin: 0 50px 50px;
 }
 
 ul {
@@ -22,7 +22,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 h2{
@@ -45,22 +45,18 @@ header .logo{
     flex: 1;
 }
 
-nav{
-    display: flex;
-}
-
 nav li{
     padding-top: 40px;
 }
 
 nav a{
-    padding: 40px 30px 0 30px;
+    padding: 40px 30px 0;
 }
 
 .signUp{
     color: #0065FC;
-    font-weight: bold;
-    padding: 40px 40px 0 40px;
+    font-weight: 700;
+    padding: 40px 40px 0;
 }
 
 nav li a:hover{
@@ -97,7 +93,7 @@ nav li a:hover{
 
 .containerMarker i{
     position: relative;
-    top: 0.85rem;
+    top: .85rem;
     left: 1.15rem;
     font-size: 1.2rem; 
 }
@@ -120,7 +116,7 @@ nav li a:hover{
     border: none;
     padding: 0;
     border-radius: 0 15px 15px 0;
-    color: #ffffff;
+    color: #fff;
     font-weight: 600;
     font-size: 1.1rem;
     cursor: pointer;
@@ -144,7 +140,6 @@ nav li a:hover{
 }
 
 .filter{
-    display: flex;
     align-items: center;
     height: 46px;
     border: 2px solid #f2f2f2;
@@ -169,7 +164,6 @@ nav li a:hover{
 }
 
 .iconFilter{
-    display: flex;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -192,12 +186,8 @@ nav li a:hover{
 
 .iconInfo i{
     margin: auto;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: #0065FC;  
-}
-
-.containerInfo{
-    display: flex;
 }
 
 /* Hotels */
@@ -230,9 +220,17 @@ nav li a:hover{
 .hotelFrame{
     flex-direction: column;
     height: 220px;
+<<<<<<< Updated upstream
     border: 5px solid #ffffff;
     border-radius: 20px;
     margin-bottom: 30px;
+=======
+    grid-template-rows: 1fr 40%;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+>>>>>>> Stashed changes
     box-shadow: 0 0 7px #c1c1c1;
 }
 
@@ -243,6 +241,7 @@ nav li a:hover{
 }
 
 .hotelDescription{
+<<<<<<< Updated upstream
     height: 36%;
     background-color: #ffffff;
     padding: 10px;
@@ -253,6 +252,13 @@ nav li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+=======
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-top: 5px;
+>>>>>>> Stashed changes
 }
 
 .hotelDescriptionText p{
@@ -312,7 +318,7 @@ nav li a:hover{
 
 .popularFrame{
     height: 145px;
-    border: 5px solid #ffffff;
+    border: 5px solid #fff;
     border-radius: 15px;
     margin-bottom: 30px;
     box-shadow: 0 0 7px #c1c1c1;
@@ -326,7 +332,7 @@ nav li a:hover{
 
 .popularDescription{
     width: 60%;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 10px 15px;
 }
 
@@ -362,7 +368,7 @@ nav li a:hover{
 }
 
 .fa-star{
-    font-size: 0.8rem;
+    font-size: .8rem;
     letter-spacing: 2px;
 }
 
@@ -399,8 +405,14 @@ nav li a:hover{
 }
 
 .activityDescription{
+<<<<<<< Updated upstream
     height: 50px;
     background-color: #ffffff;
+=======
+    align-self: center;
+    background-color: #fff;
+    padding-left: 10px;
+>>>>>>> Stashed changes
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 0 0 15px 15px;
@@ -472,7 +484,7 @@ nav li a:hover{
 /* Footer */
 
 footer{
-    padding: 40px 50px 50px 50px;
+    padding: 40px 50px 50px;
     background-color: #f2f2f2;
 }
 
@@ -528,7 +540,7 @@ footer a:hover{
     /* Popular - Tablet */
 
     .popular{
-        margin: 0 0 20px 0;
+        margin: 0 0 20px;
     }
 
     .popularFrame{
@@ -694,7 +706,7 @@ footer a:hover{
     }
 
     .popularDescriptionText .fa-star, .fa-star{
-        font-size: 0.9rem;
+        font-size: .9rem;
     }
 
     .popularDescriptionText > div{
@@ -767,6 +779,6 @@ footer a:hover{
     }
 
     footer div{
-        padding: 0px;
+        padding: 0;
     }
 }
