@@ -220,17 +220,11 @@ nav li a:hover{
 .hotelFrame{
     flex-direction: column;
     height: 220px;
-<<<<<<< Updated upstream
-    border: 5px solid #ffffff;
-    border-radius: 20px;
-    margin-bottom: 30px;
-=======
     grid-template-rows: 1fr 40%;
     box-sizing: border-box;
     border: 5px solid #fff;
     border-radius: 15px;
     overflow: hidden;
->>>>>>> Stashed changes
     box-shadow: 0 0 7px #c1c1c1;
 }
 
@@ -241,24 +235,11 @@ nav li a:hover{
 }
 
 .hotelDescription{
-<<<<<<< Updated upstream
-    height: 36%;
-    background-color: #ffffff;
-    padding: 10px;
-}
-
-.hotelDescriptionText{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-=======
     flex-direction: column;
     justify-content: space-around;
     background-color: #fff;
     padding-left: 10px;
     padding-top: 5px;
->>>>>>> Stashed changes
 }
 
 .hotelDescriptionText p{
@@ -405,14 +386,9 @@ nav li a:hover{
 }
 
 .activityDescription{
-<<<<<<< Updated upstream
-    height: 50px;
-    background-color: #ffffff;
-=======
     align-self: center;
     background-color: #fff;
     padding-left: 10px;
->>>>>>> Stashed changes
     font-size: 1.1rem;
     font-weight: 700;
     border-radius: 0 0 15px 15px;
