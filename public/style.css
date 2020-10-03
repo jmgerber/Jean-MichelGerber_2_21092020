@@ -192,12 +192,6 @@ nav li a:hover{
 
 /* Hotels */
 
-.containerHotels{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-}
-
 .hotels, .popular{
     background-color: #f2f2f2;
     border-radius: 20px;
@@ -208,17 +202,19 @@ nav li a:hover{
     flex: 2;
 }
 
-.hotelsTab{
-    flex-wrap: wrap;
-    justify-content: space-between;
+.hotels > h2{
+    margin: 0;
 }
 
-.hotelsTab a{
-    width: 32%;
+.hotelsTab{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 30px;
+    margin: 30px 0 50px;
 }
 
 .hotelFrame{
-    flex-direction: column;
+    display: grid;
     height: 220px;
     grid-template-rows: 1fr 40%;
     box-sizing: border-box;
@@ -226,12 +222,6 @@ nav li a:hover{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 7px #c1c1c1;
-}
-
-.hotelPicture{
-    height: 64%;
-    width: 100%;
-    border-radius: 15px 15px 0 0;
 }
 
 .hotelDescription{
@@ -242,7 +232,7 @@ nav li a:hover{
     padding-top: 5px;
 }
 
-.hotelDescriptionText p{
+.hotelDescription p{
     margin: 0;
 }
 
@@ -364,25 +354,38 @@ nav li a:hover{
 /* Activities */
 
 .activitiesTab{
-    height: 450px;
-    justify-content: space-between;
+    display: grid;
+    grid-template: repeat(13, 1fr) / repeat(4, 1fr);
+    height: auto;
+    gap: 40px;
+    grid-auto-flow: column;
 }
 
-.activitiesTab a{
-    width: 23%;
+.row12{
+    grid-row-end: span 13;
 }
 
-.activityFrame{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0 7px #c1c1c1;
-    border-radius: 15px;
-    height: 100%;
+.row6{
+    grid-row-end: span 7;
+}
+
+.row5{
+    grid-row-end: span 6;
 }
 
 .activityPicture{
     height: 100%;
-    border-radius: 15px 15px 0 0;
+    background-color: lawngreen;
+}
+
+.activityFrame{
+    display: grid;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
 }
 
 .activityDescription{
@@ -391,8 +394,6 @@ nav li a:hover{
     padding-left: 10px;
     font-size: 1.1rem;
     font-weight: 700;
-    border-radius: 0 0 15px 15px;
-    padding: 15px 15px 0 15px;
 }
 
 .activity1{
@@ -425,38 +426,6 @@ nav li a:hover{
     background-size: cover;
 }
 
-.activitiesColumn{
-    width: 23%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.choice2{
-    flex:0.55;
-    margin-bottom: 5%;
-}
-
-.choice3{
-    flex:0.4;
-}
-
-.choice5{
-    flex: 0.45;
-    margin-bottom: 5%;
-}
-
-.choice6{
-    flex: 0.5;
-}
-
-.activitiesColumn a{
-    width: 100%;
-}
-
-.activity1 + .activityDescription, .activity4 + .activityDescription{
-    height: 40px;
-}
-
 /* Footer */
 
 footer{
@@ -479,20 +448,16 @@ footer a:hover{
 
 @media only screen and (max-width: 1280px){
 
-    .hotelsTab a{
-        width: 48%;
-    }
-
     .hotels{
         flex: 1.5;
     }
-
-    .hotelDescriptionText{
-        line-height: 1.4rem;
+    
+    .hotelsTab{
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
     }
 
-    .hotelDescriptionText p{
-        margin: 0;
+    .activityDescription{
+        font-size: 1rem;
     }
 }
 
@@ -543,34 +508,18 @@ footer a:hover{
 
     /* Activities - Tablet */
 
-    .activitiesTab{
-        height: auto;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .activitiesTab a{
-        width: 48%;
-        order: -1;
-    }
-
-    .activityFrame{
+    .activityFrame
+    {
         height: 180px;
     }
 
-    .choice2, .choice3, .choice5, .choice6{
-        margin-bottom: 0;
-        flex: 0.48;
+    .row12, .row5, .row6{
+        grid-row-end: span 4;
+        grid-column-end: span 2;
     }
 
-    .activitiesColumn{
-        width: 100%;
-        flex-direction: row;
-        margin-top: 30px;
-    }
-
-    .activityName{
-        font-size: 1rem;
+    .activityDescription{
+        font-size: 1.1rem;
     }
 
     /* Footer - Tablet */
@@ -696,12 +645,8 @@ footer a:hover{
         background-color: initial;
     }
 
-    .containerHotels{
-        margin-bottom: 40px;
-    }
-
-    .hotelsTab a{
-        width: 100%;
+    .hotelsTab{
+        grid-template: repeat(6, 1fr) / 1fr;
     }
 
     .hotelDescription{
@@ -714,38 +659,18 @@ footer a:hover{
 
     /* Activities - Mobile */
 
-    .activitiesTab{
-        flex-direction: column;
-        height: auto;
-    }
-
-    .activitiesColumn{
-        flex-direction: column;
-        margin-top: 0;
-    }
-
-    .activitiesTab a, .activitiesColumn{
-        width: 100%;
-    }
-
-    .activitiesTab a{
-        margin-bottom: 30px;
-    }
-
-    .choice2, .choice3, .choice5, .choice6{
-        margin-bottom: 0;
-    }
-
-    .activityFrame{
-        height: 200px;
-    }
-
-    .activityName{
-        font-size: 1.1rem;
-    }
-
     .activities{
-        padding: 0 40px;
+        margin: 40px;
+    }
+
+    .activitiesTab{
+        grid-template: repeat(6, 1fr) / 1fr;;
+        grid-auto-flow: initial;
+    }
+
+    .row12, .row5, .row6{
+        grid-row-end: span 1;
+        grid-column-end: span 1;
     }
 
     /* Footer - Mobile */
