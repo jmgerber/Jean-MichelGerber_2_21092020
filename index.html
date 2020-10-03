@@ -15,7 +15,7 @@
                 <img src="public/images/logo/Reservia.svg" alt="Reservia">
             </div>
             <!-- Navigation -->
-            <nav>      
+            <nav class="flex">      
                 <ul class="flex">
                     <li><a href="#hotelsAnchor">Hébergements</a></li>
                     <li><a href="#activitiesAnchor">Activités</a></li>
@@ -37,10 +37,10 @@
             <div class="filters flex">
                 <div class="textFilter">Filtres</div>
                 <div class="filterList flex">
-                    <div class="filter"><div class="iconFilter"><i class="fas fa-money-bill-wave"></i></div><span>Économique</span></div>
-                    <div class="filter"><div class="iconFilter"><i class="fas fa-child"></i></div><span>Familial</span></div>
-                    <div class="filter"><div class="iconFilter"><i class="fas fa-heart"></i></div><span>Romantique</span></div>
-                    <div class="filter"><div class="iconFilter"><i class="fas fa-dog"></i></div><span>Animaux autorisés</span></div>
+                    <div class="filter flex"><div class="iconFilter flex"><i class="fas fa-child"></i></div><span>Familial</span></div>
+                    <div class="filter flex"><div class="iconFilter flex"><i class="fas fa-money-bill-wave"></i></div><span>Économique</span></div>
+                    <div class="filter flex"><div class="iconFilter flex"><i class="fas fa-heart"></i></div><span>Romantique</span></div>
+                    <div class="filter flex"><div class="iconFilter flex"><i class="fas fa-dog"></i></div><span>Animaux autorisés</span></div>
                 </div>
             </div>
             <div class="containerInfo flex"><div class="iconInfo flex"><i class="fas fa-info"></i></div>Plus de 500 logements sont disponibles dans cette ville</div>
@@ -50,12 +50,12 @@
             <!-- Hotels -->
             <section class="hotels">
                 <h2 id="hotelsAnchor">Hébergements à Marseille</h2>
-                <div class="hotelsTab">
+                <div class="hotelsTab flex">
 
                     <a href="">
                         <div class="hotelFrame">
                             <div class="hotelPicture hotel1"></div>
-                            <div class="hotelDescription">
+                            <div class="hotelDescription flex">
                                 <span class="hotelName">Auberge la Cannebière</span>
                                 <p>Nuit à partir de 25€</p>
                                 <div><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star greyStar"></i></div>
@@ -64,9 +64,9 @@
                     </a>    
 
                     <a href="">
-                        <div class="hotelFrame">
+                        <div class="hotelFrame flex">
                             <div class="hotelPicture hotel2"></div>
-                            <div class="hotelDescription">
+                            <div class="hotelDescription flex">
                                 <span class="hotelName">Hôtel du port</span>
                                 <p>Nuit à partir de 52€</p>
                                 <div><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i></div>
@@ -75,9 +75,9 @@
                     </a>
 
                     <a href="">
-                        <div class="hotelFrame">
+                        <div class="hotelFrame flex">
                             <div class="hotelPicture hotel3"></div>
-                            <div class="hotelDescription">
+                            <div class="hotelDescription flex">
                                 <span class="hotelName">Hôtel Les mouettes</span>
                                 <p>Nuit à partir de 76€</p>
                                 <div><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star greyStar"></i></div>
@@ -86,9 +86,9 @@
                     </a>
 
                     <a href="">
-                        <div class="hotelFrame">
+                        <div class="hotelFrame flex">
                             <div class="hotelPicture hotel4"></div>
-                            <div class="hotelDescription">
+                            <div class="hotelDescription flex">
                                 <span class="hotelName">Hôtel de la mer</span>
                                 <p>Nuit à partir de 46€</p>
                                 <div><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star greyStar"></i><i class="fas fa-star greyStar"></i></div>
@@ -97,9 +97,9 @@
                     </a>
 
                     <a href="">
-                        <div class="hotelFrame">
+                        <div class="hotelFrame flex">
                             <div class="hotelPicture hotel5"></div>
-                            <div class="hotelDescription">
+                            <div class="hotelDescription flex">
                                 <span class="hotelName">Auberge Le Panier</span>
                                 <p>Nuit à partir de 23€</p>
                                 <div><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star greyStar"></i></div>
@@ -108,9 +108,9 @@
                     </a>
 
                     <a href="">
-                        <div class="hotelFrame">
+                        <div class="hotelFrame flex">
                             <div class="hotelPicture hotel6"></div>
-                            <div class="hotelDescription">
+                            <div class="hotelDescription flex">
                                 <span class="hotelName">Hôtel chez Amina</span>
                                 <p>Nuit à partir de 96€</p>
                                 <div><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i><i class="fas fa-star blueStar"></i></div>
@@ -180,62 +180,77 @@
         <!-- Activities -->
         <section class="activities">
             <h2 id="activitiesAnchor">Activités à Marseille</h2>
-            <div class="activitiesTab">
+            <div class="activitiesTab flex">
 
-                <a href="" class="row12">
+                <a href="">
                     <div class="activityFrame">
                         <div class="activityPicture activity1"></div>
                         <div class="activityDescription">
-                            Vieux Port
+                            <div class="activityName">
+                                Vieux Port
+                            </div>
                         </div>
                     </div>
                 </a>
 
-                <a href="" class="row6">
-                    <div class="activityFrame">
-                        <div class="activityPicture activity2"></div>  
-                        <div class="activityDescription">
-                            Fort de Pomègues
+                <div class="activitiesColumn flex">
+                    <a href="" class="choice2">
+                        <div class="activityFrame choice2">
+                            <div class="activityPicture activity2"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Fort de Pomègues
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="" class="row5">
-                    <div class="activityFrame">
-                        <div class="activityPicture activity3"></div>  
-                        <div class="activityDescription">
-                            Îles du Frioul
+                    <a href="" class="choice3">
+                        <div class="activityFrame choice3">
+                            <div class="activityPicture activity3"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Îles du Frioul
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
 
-                <a href="" class="row12">
+                <a href="">
                     <div class="activityFrame">
                         <div class="activityPicture activity4"></div>  
                         <div class="activityDescription">
-                            Parc National des Calanques
+                            <div class="activityName">
+                                Parc National des Calanques
+                            </div>
                         </div>
                     </div>
                 </a>
 
-                <a href="" class="row5">
-                    <div class="activityFrame">
-                        <div class="activityPicture activity5"></div>  
-                        <div class="activityDescription">
-                            Notre-Dame-de-la-Garde
+                <div class="activitiesColumn flex">
+                    <a href="" class="choice5">
+                        <div class="activityFrame choice5">
+                            <div class="activityPicture activity5"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Notre-Dame-de-la-Garde
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="" class="row6">
-                    <div class="activityFrame">
-                        <div class="activityPicture activity6"></div>  
-                        <div class="activityDescription">
-                            Parc Longchamp
+                    <a href="" class="choice6">
+                        <div class="activityFrame choice6">
+                            <div class="activityPicture activity6"></div>  
+                            <div class="activityDescription">
+                                <div class="activityName">
+                                    Parc Longchamp
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
-
+                    </a>
+                </div>
             </div>
         </section>
     </div>
