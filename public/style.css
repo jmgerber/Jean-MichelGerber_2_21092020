@@ -33,6 +33,10 @@ h2{
     display: flex;
 }
 
+.euros{
+    font-weight: 600;
+}
+
 /* Header */
 
 header{
@@ -176,7 +180,6 @@ nav li a:hover{
 }
 
 .iconInfo{
-    margin: 0;
     height: 20px;
     width: 20px;
     border: 1px solid #f2f2f2;
@@ -293,24 +296,20 @@ nav li a:hover{
     border-radius: 15px;
     margin-bottom: 30px;
     box-shadow: 0 0 7px #c1c1c1;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .popularPicture{
-    height: 100%;
     width: 40%;
-    border-radius: 15px 0 0 15px;
 }
 
 .popularDescription{
-    width: 60%;
+    flex: 1;
     background-color: #fff;
-    padding: 10px 15px;
-}
-
-.popularDescriptionText{
-    height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .popular1{
@@ -488,11 +487,15 @@ footer a:hover{
         height: 180px;
     }
 
-    .popularDescriptionText, .popularDescriptionText .hotelName{
+    .popularDescription .hotelName{
         font-size: 1.5rem;
     }
 
-    .popularDescriptionText .fa-star{
+    .popularDescription p{
+        font-size: 1.2rem;
+    }
+
+    .popularDescription .fa-star{
         font-size: 1rem;
     }
 
@@ -622,23 +625,23 @@ footer a:hover{
         height: 145px;
     }
 
-    .popularDescriptionText .hotelName, .hotelName{
+    .hotelName{
+        font-size: 1.2rem !important;
+    }
+
+    .popularDescription p{
         font-size: 1.2rem;
     }
 
-    .popularDescriptionText p{
-        font-size: 1rem;
-    }
-
-    .popularDescriptionText .fa-star, .fa-star{
-        font-size: .9rem;
-    }
-
-    .popularDescriptionText > div{
-        line-height: 1.4rem;
+    .fa-star{
+        font-size: .9rem !important;
     }
 
     /* Hotels - Mobile */
+
+    .hotelFrame{
+        height: 200px;
+    }
 
     .hotels{
         padding: 0 40px;
@@ -647,10 +650,6 @@ footer a:hover{
 
     .hotelsTab{
         grid-template: repeat(6, 1fr) / 1fr;
-    }
-
-    .hotelDescription{
-        height: 33%;
     }
 
     .hotelDescriptionText{
