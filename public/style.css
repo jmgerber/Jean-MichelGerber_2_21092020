@@ -14,13 +14,13 @@ body{
     margin: 0 50px 50px;
 }
 
-ul {
+ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-a {
+a{
     text-decoration: none;
     color: #000;
 }
@@ -44,7 +44,7 @@ header{
     margin-bottom: 35px;
 }
 
-header .logo{
+.logo{
     margin-top: 30px;
     flex: 1;
 }
@@ -88,8 +88,7 @@ nav li a:hover{
     height: 50px;
 }
 
-.containerMarker
-{
+.containerMarker{
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
@@ -319,9 +318,9 @@ nav li a:hover{
 
 .activitiesTab{
     display: grid;
-    grid-template: repeat(13, 1fr) / repeat(4, 1fr);
-    height: auto;
-    gap: 40px;
+    grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+    gap: 37.5px;
+    height: 450px;
     grid-auto-flow: column;
 }
 
@@ -446,6 +445,10 @@ footer a:hover{
     }
 
     /* Activities - Tablet */
+    
+    .activitiesTab{
+        height: auto;
+    }
 
     .activityFrame
     {
