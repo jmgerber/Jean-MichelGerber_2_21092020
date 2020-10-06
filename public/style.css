@@ -93,6 +93,7 @@ nav li a:hover{
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
     width: 50px;
+    flex-shrink: 0;
 }
 
 .containerMarker i{
@@ -124,6 +125,7 @@ nav li a:hover{
     font-weight: 600;
     font-size: 1.1rem;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .searchButton i{
@@ -227,6 +229,12 @@ nav li a:hover{
     box-shadow: 0 0 7px #c1c1c1;
 }
 
+.hotelFrame img{
+    width: 100%;
+    height: 126px;
+    object-fit: cover;
+}
+
 .hotelDescription{
     flex-direction: column;
     justify-content: space-around;
@@ -237,36 +245,6 @@ nav li a:hover{
 
 .hotelDescription p{
     margin: 0;
-}
-
-.hotel1{
-    background: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.hotel2{
-    background: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.hotel3{
-    background: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.hotel4{
-    background: url("images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.hotel5{
-    background: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.hotel6{
-    background: url("images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg") center;
-    background-size: cover;
 }
 
 .showMore{
@@ -300,8 +278,10 @@ nav li a:hover{
     overflow: hidden;
 }
 
-.popularPicture{
+.popularFrame img{
     width: 40%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .popularDescription{
@@ -310,21 +290,6 @@ nav li a:hover{
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-}
-
-.popular1{
-    background: url("images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.popular2{
-    background: url("images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.popular3{
-    background: url("images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg") center;
-    background-size: cover;
 }
 
 .hotelName{
@@ -372,11 +337,6 @@ nav li a:hover{
     grid-row-end: span 6;
 }
 
-.activityPicture{
-    height: 100%;
-    background-color: lawngreen;
-}
-
 .activityFrame{
     display: grid;
     grid-template-rows: 1fr 50px;
@@ -387,42 +347,18 @@ nav li a:hover{
     box-shadow: 0 0 7px #c1c1c1;
 }
 
+.activityFrame img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
 .activityDescription{
     align-self: center;
     background-color: #fff;
     padding-left: 10px;
     font-size: 1.1rem;
     font-weight: 700;
-}
-
-.activity1{
-    background: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.activity2{
-    background: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.activity3{
-    background: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.activity4{
-    background: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.activity5{
-    background: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg") center;
-    background-size: cover;
-}
-
-.activity6{
-    background: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg") center;
-    background-size: cover;
 }
 
 /* Footer */
@@ -600,11 +536,6 @@ footer a:hover{
         width: 50px;
         border-radius: 15px;
         left: -20px;
-        flex-shrink: 0;
-    }
-
-    .containerMarker{
-        flex-shrink: 0;
     }
 
     .searchButton span{
@@ -652,8 +583,8 @@ footer a:hover{
         grid-template: repeat(6, 1fr) / 1fr;
     }
 
-    .hotelDescriptionText{
-        line-height: 1.8rem;
+    .hotelFrame img{
+        height: 116px;
     }
 
     /* Activities - Mobile */
