@@ -238,8 +238,7 @@ nav li a:hover{
     flex-direction: column;
     justify-content: space-around;
     background-color: #fff;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding: 5px 10px;
 }
 
 .hotelDescription p{
@@ -259,8 +258,13 @@ nav li a:hover{
 }
 
 .popularIcon{
-    align-items: center;
     justify-content: space-between;
+    align-items: baseline;
+}
+
+.popularIcon h2{
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .popularIcon i{
@@ -388,6 +392,7 @@ footer a:hover{
     
     .hotelsTab{
         grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        margin: 30px 0;
     }
 
     .activityDescription{
@@ -423,7 +428,7 @@ footer a:hover{
     }
 
     .popularDescription .hotelName{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .popularDescription p{
@@ -452,7 +457,7 @@ footer a:hover{
 
     .activityFrame
     {
-        height: 180px;
+        height: 190px;
     }
 
     .row12, .row5, .row6{
@@ -480,6 +485,10 @@ footer a:hover{
         margin: 0;
     }
 
+    h2{
+        font-size: 1.4rem;
+    }
+
     /* Header - Mobile */
 
     header{
@@ -488,13 +497,13 @@ footer a:hover{
     }
 
     .logo{
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .signUp{
         align-self: flex-end;
         padding: 0;
-        margin-right: 30px;
+        margin-right: 20px;
         position: relative;
         bottom: 30px;
     }
@@ -527,11 +536,15 @@ footer a:hover{
     /* Search - Mobile */
 
     .search{
-        margin: 30px;
+        margin: 30px 20px;
     }
 
     .searchInput{
         flex: 1;
+    }
+
+    .searchBar{
+        margin: 35px 0 30px;
     }
 
     .searchButton{
@@ -549,26 +562,42 @@ footer a:hover{
         display: inline-block;
     }
 
+    .filters{
+        margin-bottom: 12px;
+    }
+
     /* Popular - Mobile */
 
     .popular{
         border-radius: 0;
+        padding: 40px 20px 30px;
+        margin-bottom: 40px;
     }
 
     .popularFrame{
         height: 145px;
+        margin-bottom: 10px;
+    }
+
+    .popularIcon i{
+        font-size: 1.4rem;
     }
 
     .hotelName{
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
     }
 
     .popularDescription p{
-        font-size: 1.2rem;
+        font-size: .9rem;
+    }
+
+    .popularDescription{
+        padding: 15px 10px 10px 20px;
     }
 
     .fa-star{
-        font-size: .9rem !important;
+        font-size: .8rem !important;
+        letter-spacing: 1px;
     }
 
     /* Hotels - Mobile */
@@ -578,27 +607,33 @@ footer a:hover{
     }
 
     .hotels{
-        padding: 0 40px;
+        padding: 0 20px;
         background-color: initial;
     }
 
     .hotelsTab{
         grid-template: repeat(6, 1fr) / 1fr;
+        gap: 15px;
     }
 
     .hotelFrame img{
         height: 116px;
     }
 
+    .hotelDescription p{
+        font-size: .9rem;
+    }
+
     /* Activities - Mobile */
 
     .activities{
-        margin: 40px;
+        margin: 55px 20px 45px;
     }
 
     .activitiesTab{
         grid-template: repeat(6, 1fr) / 1fr;;
         grid-auto-flow: initial;
+        gap: 24px;
     }
 
     .row12, .row5, .row6{
@@ -610,6 +645,7 @@ footer a:hover{
 
     footer{
         flex-direction: column;
+        padding: 45px 30px;
     }
 
     footer div{
