@@ -96,10 +96,8 @@ nav li a:hover{
 }
 
 .containerMarker i{
-    position: relative;
-    top: .85rem;
-    left: 1.15rem;
-    font-size: 1.2rem; 
+    margin: auto;
+    font-size: 1.2rem;
 }
 
 .searchInput{
