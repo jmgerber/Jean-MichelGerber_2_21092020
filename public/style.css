@@ -296,6 +296,7 @@ nav li a:hover{
 }
 
 .hotelName{
+    margin: 0;
     font-weight: 700;
     font-size: 1.1rem;
 }
