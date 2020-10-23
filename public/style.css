@@ -245,6 +245,23 @@ nav li a:hover{
     margin: 0;
 }
 
+.hotelRate{
+    word-spacing: -1ch;
+}
+
+.fa-star{
+    font-size: .8rem;
+    letter-spacing: 2px;
+}
+
+.blueStar{
+    color: #0065FC;
+}
+
+.greyStar{
+    color: #f2f2f2;
+}
+
 .showMore{
     font-weight: 700;
     font-size: 1.2rem;
@@ -304,19 +321,6 @@ nav li a:hover{
 .popularDescription .hotelName + p{
     margin-top: 8px;
     margin-bottom: 0;
-}
-
-.fa-star{
-    font-size: .8rem;
-    letter-spacing: 2px;
-}
-
-.blueStar{
-    color: #0065FC;
-}
-
-.greyStar{
-    color: #f2f2f2;
 }
 
 /* Activities */
